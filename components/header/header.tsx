@@ -24,7 +24,7 @@ export default function Header() {
       className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
         isScrolled
           ? "backdrop-blur-md bg-black/50 shadow-md"
-          : "bg-gradient-to-r from-[#000000] to-[#162452]"
+          : "bg-gradient-to-r from-[#00000000] to-[#16245200]"
       } text-white`}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
