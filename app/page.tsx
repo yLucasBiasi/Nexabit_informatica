@@ -7,6 +7,7 @@ import { Reviews } from "@/components/review/review";
 import { FAQ } from "@/components/FAQ/FAQ";
 import { Contact } from "@/components/contact/contact";
 import { Footer } from "@/components/footer/footer";
+import WhatsAppButton from "@/components/icon_whastapp/icon_whatsapp";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <FAQ/>
       <Contact/>
       <Footer/>
+      <WhatsAppButton/>
     </div>
   );
 }

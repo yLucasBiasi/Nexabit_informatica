@@ -1,16 +1,35 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "../../assets/Nexabit logo monitor azul.png";
+import Image from "next/image";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+  // Detecta scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="bg-gradient-to-r from-[#000000] to-[#162452] text-white shadow-md">
+    <header
+      className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
+        isScrolled
+          ? "backdrop-blur-md bg-black/50 shadow-md"
+          : "bg-gradient-to-r from-[#000000] to-[#162452]"
+      } text-white`}
+    >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold">NexaBit</h1>
+          <Image src={logo} alt="logo" className="w-18" />
         </div>
 
         {/* Desktop Navigation */}

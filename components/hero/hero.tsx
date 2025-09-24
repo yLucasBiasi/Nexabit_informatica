@@ -4,8 +4,8 @@ import { Home, ShieldCheck } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-b from-[#000000] to-[#162452] text-white py-24">
-      <div className="container mx-auto px-4">
+    <section className="bg-gradient-to-b from-[#000000] to-[#162452] text-white py-24 h-screen">
+      <div className="container mx-auto px-4 flex justify-center items-center h-full">
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">NexaBit</h1>
           <h2 className="text-2xl md:text-3xl mb-6">
