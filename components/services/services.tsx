@@ -20,23 +20,20 @@ export default function Services() {
                 </div>
               </div>
               <h3 className="text-xl font-bold text-center mb-4 text-white">
-                Manutenção de Computadores
+                Reparos e Upgrades
               </h3>
               <p className="text-gray-300 text-center mb-6">
-                Reparos e upgrades para seu computador, sempre feitos pela nossa
-                equipe diretamente na sua casa
+                Melhorias e consertos no seu computador, feitos com qualidade e rapidez, diretamente na sua casa.
               </p>
               <ul className="space-y-2 text-gray-400">
                 <li className="flex items-center">
-                  <span className="text-blue-400 mr-2">•</span> Limpeza de
-                  computador
+                  <span className="text-blue-400 mr-2">•</span> Limpeza interna
                 </li>
                 <li className="flex items-center">
                   <span className="text-blue-400 mr-2">•</span> Troca de peças
                 </li>
                 <li className="flex items-center">
-                  <span className="text-blue-400 mr-2">•</span> Instalação
-                  Windows
+                  <span className="text-blue-400 mr-2">•</span> Upgrades de hardware
                 </li>
               </ul>
             </div>
@@ -51,23 +48,20 @@ export default function Services() {
                 </div>
               </div>
               <h3 className="text-xl font-bold text-center mb-4 text-white">
-                Manutenção de Computadores
+                Diagnóstico de Hardware e Software
               </h3>
               <p className="text-gray-300 text-center mb-6">
-                Diagnóstico e soluções completas para problemas de hardware e
-                software na sua casa
+                Identificação e solução de problemas em seu computador, garantindo que tudo funcione corretamente.
               </p>
               <ul className="space-y-2 text-gray-400">
                 <li className="flex items-center">
-                  <span className="text-blue-400 mr-2">•</span> Limpeza de
-                  computador
+                  <span className="text-blue-400 mr-2">•</span> Detecção de vírus e malwares
                 </li>
                 <li className="flex items-center">
-                  <span className="text-blue-400 mr-2">•</span> Troca de peças
+                  <span className="text-blue-400 mr-2">•</span> Diagnóstico de falhas
                 </li>
                 <li className="flex items-center">
-                  <span className="text-blue-400 mr-2">•</span> Instalação
-                  Windows
+                  <span className="text-blue-400 mr-2">•</span> Otimização de desempenho
                 </li>
               </ul>
             </div>
@@ -85,20 +79,17 @@ export default function Services() {
                 Atendimento a Domicílio
               </h3>
               <p className="text-gray-300 text-center mb-6">
-                Serviços de qualidade com a conveniência de não precisar sair de
-                casa, nossa equipe vai até você
+                Serviços de qualidade sem precisar sair de casa, nossa equipe vai até você.
               </p>
               <ul className="space-y-2 text-gray-400">
                 <li className="flex items-center">
-                  <span className="text-blue-400 mr-2">•</span> Limpeza de
-                  computador
+                  <span className="text-blue-400 mr-2">•</span> Instalação de softwares
                 </li>
                 <li className="flex items-center">
-                  <span className="text-blue-400 mr-2">•</span> Troca de peças
+                  <span className="text-blue-400 mr-2">•</span> Suporte técnico presencial
                 </li>
                 <li className="flex items-center">
-                  <span className="text-blue-400 mr-2">•</span> Instalação
-                  Windows
+                  <span className="text-blue-400 mr-2">•</span> Consultoria personalizada
                 </li>
               </ul>
             </div>
