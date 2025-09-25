@@ -9,7 +9,7 @@ export function FAQ() {
     {
       question: "Quem somos",
       answer:
-        "Somos uma empresa especializada em serviços de tecnologia, com foco em atendimento a domicílio para proporcionar mais segurança e conforto aos nossos clientes.",
+        "Nossa empresa nasceu da vontade de oferecer um atendimento mais confiável e transparente em serviços de tecnologia. A ideia surgiu ao percebermos que muitos clientes tinham experiências frustrantes com serviços presenciais, e queríamos criar uma forma de levar soluções até eles com total clareza e segurança, garantindo confiança em cada serviço realizado.",
     },
     {
       question: "O que fazemos",
@@ -20,6 +20,16 @@ export function FAQ() {
       question: "Por que nos escolher",
       answer:
         "Além da conveniência do atendimento a domicílio, contamos com profissionais qualificados, garantia nos serviços prestados e preços justos, sempre priorizando a segurança e satisfação dos nossos clientes.",
+    },
+    {
+      question: "Como agendar um atendimento?",
+      answer:
+        "Você pode agendar um atendimento de forma simples pelo nosso site, WhatsApp ou telefone. Escolha a data e horário que melhor se encaixam na sua rotina e nós confirmaremos o agendamento rapidamente.",
+    },
+    {
+      question: "Quais são as formas de pagamento?",
+      answer:
+        "Aceitamos diversas formas de pagamento, incluindo cartão de crédito, PIX, transferência bancária e dinheiro. Garantimos total segurança e transparência em todas as transações.",
     },
   ];
 
@@ -68,7 +78,7 @@ export function FAQ() {
               <div
                 className={`px-6 overflow-hidden transition-all duration-500 ${
                   openIndex === index
-                    ? "max-h-40 pb-6 opacity-100"
+                    ? "max-h-55 pb-6 opacity-100"
                     : "max-h-0 opacity-0"
                 }`}
               >
