@@ -60,7 +60,7 @@ export default function Gallery() {
             em nosso Instagram
           </p>
           <a
-            href="https://www.instagram.com/_nexusinformatica/"
+            href="https://www.instagram.com/nexabit_informatica/"
             className="mt-4 flex items-center text-blue-300 hover:text-blue-400 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
@@ -94,7 +94,7 @@ export default function Gallery() {
         {/* Link Instagram */}
         <div className="mt-10 text-center">
           <a
-            href="https://www.instagram.com/_nexusinformatica/"
+            href="https://www.instagram.com/nexabit_informatica/"
             className="inline-flex items-center text-blue-300 hover:text-blue-400 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
