@@ -4,6 +4,7 @@ import image1 from "../../assets/filipe-marques.jpg";
 import image2 from "../../assets/victor-viscatela.jpg"
 import image3 from "../../assets/wesley-ruas.jpg"
 import image4 from "../../assets/murilo-aguair.jpg"
+import Image from "next/image"
 
 export function Reviews() {
   const reviews = [
@@ -53,7 +54,7 @@ export function Reviews() {
               {/* Cabeçalho */}
               <div className="flex items-center mb-4">
                 {/* Lógica para usar 'src' se for objeto (imagem local) ou o valor direto (URL externa) */}
-                <img
+                <Image
                   src={
                     typeof review.image === 'object' && review.image.src
                       ? review.image.src
