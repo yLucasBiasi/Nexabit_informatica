@@ -1,34 +1,37 @@
 import React from "react";
 import { StarIcon } from "lucide-react";
+import image1 from "../../assets/filipe-marques.jpg";
+import image2 from "../../assets/victor-viscatela.jpg"
+import image3 from "../../assets/wesley-ruas.jpg"
+import image4 from "../../assets/murilo-aguair.jpg"
 
 export function Reviews() {
   const reviews = [
     {
-      name: "Carlos Silva",
+      name: "Felipe Marques",
       rating: 5,
-      comment:
-        "Excelente serviço! Vieram até minha casa e resolveram o problema do meu computador rapidamente.",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
+      comment: "Excelente trabalho meu mano, o melhor",
+      image: image1, 
     },
     {
-      name: "Ana Oliveira",
+      name: "Victor Viscatela",
       rating: 5,
       comment:
-        "Muito profissionais e atenciosos. Gostei muito do atendimento a domicílio, super prático!",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
+        "Montagem rápida, deu vídeo de primeira e deixou tudo atualizado",
+      image: image2, 
     },
     {
-      name: "Roberto Santos",
-      rating: 4,
-      comment:
-        "Ótimo serviço de manutenção. Meu computador voltou a funcionar perfeitamente.",
-      image: "https://randomuser.me/api/portraits/men/67.jpg",
-    },
-    {
-      name: "Mariana Costa",
+      name: "Wesley",
       rating: 5,
-      comment: "Super recomendo! Atendimento em casa rápido e eficiente.",
-      image: "https://randomuser.me/api/portraits/women/17.jpg",
+      comment:
+        "Obrigado pela atenção desde o primeiro contato, tirou dúvidas sobre algumas peças que eu precisava comprar ainda e compareceu no dia e hora marcados. Recomendo demais.",
+      image: image3,
+    },
+    {
+      name: "Murilo Aguiar",
+      rating: 5,
+      comment: "Sem palavras, serviço muito profissional em cada detalhe, sucesso sempre 🙌🔥",
+      image: image4,
     },
   ];
 
@@ -37,7 +40,7 @@ export function Reviews() {
       <div className="container mx-auto px-4">
         {/* Título */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-blue-400">
-          Avaliações do Google
+          Feedbacks
         </h2>
 
         {/* Grid */}
@@ -49,8 +52,13 @@ export function Reviews() {
             >
               {/* Cabeçalho */}
               <div className="flex items-center mb-4">
+                {/* Lógica para usar 'src' se for objeto (imagem local) ou o valor direto (URL externa) */}
                 <img
-                  src={review.image}
+                  src={
+                    typeof review.image === 'object' && review.image.src
+                      ? review.image.src
+                      : review.image
+                  }
                   alt={review.name}
                   className="w-12 h-12 rounded-full mr-4 object-cover ring-2 ring-blue-400/30"
                 />
@@ -62,9 +70,7 @@ export function Reviews() {
                         key={i}
                         size={16}
                         className={`${
-                          i < review.rating
-                            ? "text-yellow-400"
-                            : "text-gray-600"
+                          i < review.rating ? "text-yellow-400" : "text-gray-600"
                         } fill-current`}
                       />
                     ))}
@@ -74,18 +80,6 @@ export function Reviews() {
 
               {/* Comentário */}
               <p className="text-gray-300 leading-relaxed">{review.comment}</p>
-
-              {/* Rodapé Google */}
-              <div className="mt-4 flex items-center">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-                  alt="Google"
-                  className="w-5 h-5 mr-2"
-                />
-                <span className="text-xs text-gray-400">
-                  Avaliação verificada no Google
-                </span>
-              </div>
             </div>
           ))}
         </div>
