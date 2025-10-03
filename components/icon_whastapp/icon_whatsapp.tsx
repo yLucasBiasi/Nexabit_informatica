@@ -10,6 +10,7 @@ export default function WhatsAppButton() {
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
+      title="Fale conosco pelo WhatsApp"
       className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-colors duration-300 z-50"
     >
       <MessageCircle size={28} />
